@@ -1,5 +1,5 @@
 # ScadaIF
-![logo](https://github.com/user-attachments/assets/efa09f9a-3868-4a17-9615-894494d3f904)
+<img src="https://github.com/user-attachments/assets/efa09f9a-3868-4a17-9615-894494d3f904" alt="logo" width="400"/>
 
 Sistema Supervisório desenvolvido como projeto acadêmico no curso de Engenharia Elétrica do IFAL – Campus Palmeira dos Índios, com aplicação na Planta Didática SMAR HART PD3-C.
 
@@ -7,6 +7,7 @@ Sistema Supervisório desenvolvido como projeto acadêmico no curso de Engenhari
 
 O ScadaIF é um sistema supervisório funcional criado para o monitoramento e controle de variáveis de processo em uma planta térmico-hidráulica. O projeto foi desenvolvido com fins educacionais e tem como objetivo promover o aprendizado prático em automação industrial.
 
+<img src="https://github.com/user-attachments/assets/a2d2d3e9-17ac-4b40-be2d-fee8e4c62133" alt="logo" width="800"/>
 ## 🎯 Objetivos
 
 - Desenvolver um sistema supervisório funcional utilizando ScadaBR
