@@ -1,0 +1,4 @@
+<!-- Reconhecer todos os alarmes -->	
+<img src="/ScadaBR/images/tick.png" title="Reconhecer todos os alarmes" style="cursor: pointer; display: inline;" onclick="MiscDwr.acknowledgeAllPendingEvents()" ></img>
+<!-- Silenciar todos os alarmes -->
+<img src="/ScadaBR/images/sound_mute.png" title="Silenciar todos os alarmes" style="cursor: pointer; display: inline;" onclick="MiscDwr.silenceAll()" ></img>

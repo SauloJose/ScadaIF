@@ -1,0 +1,28 @@
+04/22/25 13:33:38.486  [CConfApp::InitInstance()                          ] Command info: 4 - Command fileName: ""
+04/22/25 13:34:05.26   [CConfDoc::DeleteContents                          ] Deleting contents..
+04/22/25 13:34:05.27   [CConfDoc::DeleteContents                          ] Deleted contents..
+04/22/25 13:34:05.27   [CConfDoc::Serialize                               ] Serializing..
+04/22/25 13:34:05.28   [CConfDoc::Serialize                               ] Serializing LOOPS..
+04/22/25 13:34:05.28   [CConfDoc::Serialize                               ] Serializing Templates..
+04/22/25 13:34:05.28   [CConfDoc::Serialize                               ] Serializing Objects..
+04/22/25 13:34:05.29   [CConfDoc::Serialize                               ] Serializing Graphics..
+04/22/25 13:34:07.554  [CConfDoc::Serialize                               ] Serialized..
+04/22/25 13:34:47.288  [CConfDoc::DoFileSave                              ] Do file saving..
+04/22/25 13:34:47.292  [CConfDoc::OnSaveDocument                          ] Clearing undo manager...
+04/22/25 13:34:47.293  [CConfDoc::Serialize                               ] Serializing..
+04/22/25 13:34:47.293  [CConfDoc::Serialize                               ] Serializing LOOPS..
+04/22/25 13:34:47.293  [CConfDoc::Serialize                               ] Serializing Templates..
+04/22/25 13:34:47.293  [CConfDoc::Serialize                               ] Serializing Objects..
+04/22/25 13:34:47.293  [CConfDoc::Serialize                               ] Serializing Graphics..
+04/22/25 13:34:47.294  [CConfDoc::Serialize                               ] Serialized..
+04/22/25 13:34:47.305  [CConfDoc::DoFileSave                              ] Do file saved..
+04/22/25 13:34:47.382  [CConfDoc::DeleteContents                          ] Deleting contents..
+04/22/25 13:34:47.382  [CConfDoc::DeleteContents                          ] Deleted contents..
+04/22/25 13:34:47.382  [CConfDoc::~CConfDoc                               ] Destructing..
+04/22/25 13:34:47.382  [CConfDoc::~CConfDoc                               ] Removing all LOOPs..
+04/22/25 13:34:47.384  [CConfDoc::~CConfDoc                               ] Removing used block list..
+04/22/25 13:34:47.385  [CConfDoc::~CConfDoc                               ] Clearing undo manager...
+04/22/25 13:34:47.385  [CConfDoc::~CConfDoc                               ] Removing template list...
+04/22/25 13:34:47.385  [CConfDoc::~CConfDoc                               ] Removing object list..
+04/22/25 13:34:47.385  [CConfDoc::~CConfDoc                               ] Removing graphic list..
+04/22/25 13:34:47.387  [CConfDoc::~CConfDoc                               ] Destructed..

@@ -1,0 +1,65 @@
+/* Código modernizado e seguro para ScadaBR - Livre para uso sob a licença MIT */
+
+// Configurações do datapoint
+var descricaoDoDatapoint = "Data Point"; // Descrição opcional
+var prefixo = "";
+var sufixo = "";
+var casasDecimais = 0;
+
+// Configurações de estilo
+var largura = 100; // Largura em pixels
+var altura = 60;   // Altura em pixels
+var corFundo = "#1e1e1e"; // Fundo moderno
+var corDescricao = "#ffffff"; // Cor da descrição
+var corValores = "#ffcc00";   // Cor dos valores
+var tamanhoFonteDescricao = 12; // Tamanho da fonte para descrição
+var tamanhoFonteValores = 14;  // Tamanho da fonte para valores
+var borda = "1px solid #444"; // Borda estilizada
+var bordaArredondada = 8; // Bordas arredondadas
+var sombra = "0 2px 4px rgba(0, 0, 0, 0.4)"; // Sombra suave
+
+// Classe única para os elementos
+var classeDp = "datapoint" + pointComponent.id; // Nome único para evitar conflitos
+
+// Formatando o valor
+var valorFormatado = prefixo + value.toFixed(casasDecimais) + sufixo;
+
+// Criando o HTML principal
+var s = "";
+s += "<div class='" + classeDp + "'>";
+if (descricaoDoDatapoint) {
+    s += "<div class='descricao'>" + descricaoDoDatapoint + "</div>";
+}
+s += "<div class='valor'>" + valorFormatado + "</div>";
+s += "</div>";
+
+// Adicionando estilos diretamente
+s += "<style>";
+s += "." + classeDp + " {";
+s += "  display: flex;";
+s += "  flex-direction: column;";
+s += "  justify-content: center;";
+s += "  align-items: center;";
+s += "  width: " + largura + "px;";
+s += "  height: " + altura + "px;";
+s += "  background-color: " + corFundo + ";";
+s += "  border: " + borda + ";";
+s += "  border-radius: " + bordaArredondada + "px;";
+s += "  box-shadow: " + sombra + ";";
+s += "  font-family: Arial, sans-serif;";
+s += "  text-align: center;";
+s += "}";
+s += "." + classeDp + " .descricao {";
+s += "  font-size: " + tamanhoFonteDescricao + "px;";
+s += "  color: " + corDescricao + ";";
+s += "  opacity: 0.8;";
+s += "  margin-bottom: 4px;";
+s += "}";
+s += "." + classeDp + " .valor {";
+s += "  font-size: " + tamanhoFonteValores + "px;";
+s += "  color: " + corValores + ";";
+s += "  font-weight: bold;";
+s += "}";
+s += "</style>";
+
+return s;

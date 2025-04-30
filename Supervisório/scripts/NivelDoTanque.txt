@@ -1,0 +1,70 @@
+/* Script para ScadaBR - Simulação de nível de tanque com barra de água */
+
+// Configurações do tanque
+var descricaoDoTanque = ""; // Exibe a descrição do tanque (opcional)
+var alturaTanque = 160; // Altura total do tanque em pixels
+var larguraTanque = 40; // Largura total do tanque em pixels
+var corTanque = "#1e90ff"; // Cor da água (azul)
+var corFundoTanque = "#f0f0f0"; // Cor do fundo do tanque
+var corBorda = "#444"; // Cor da borda
+var espessuraBorda = "2px"; // Espessura da borda
+var arredondamentoBorda = 10; // Bordas arredondadas
+var velocidadeAnimacao = "2s"; // Aumento para transição mais lenta
+
+// Classe única para o elemento
+var classeTanque = "tank" + pointComponent.id;
+
+// Calcular altura da água com base no valor (0 a 100%)
+var alturaAgua = Math.max(0, Math.min(100, value)) + "%";
+
+// Criando o HTML principal
+var s = "";
+s += "<div class='" + classeTanque + "'>";
+if (descricaoDoTanque) {
+    s += "<div class='descricao'>" + descricaoDoTanque + "</div>";
+}
+s += "<div class='tanque'>";
+s += "  <div class='agua' style='height: " + alturaAgua + ";'></div>";
+s += "</div>";
+s += "</div>";
+
+// Adicionando estilos diretamente
+s += "<style>";
+// Estilo do container principal
+s += "." + classeTanque + " {";
+s += "  display: flex;";
+s += "  flex-direction: column;";
+s += "  align-items: center;";
+s += "  width: " + larguraTanque + "px;";
+s += "}";
+// Estilo da descrição
+s += "." + classeTanque + " .descricao {";
+s += "  font-size: 14px;";
+s += "  color: #000;";
+s += "  margin-bottom: 8px;";
+s += "  text-align: center;";
+s += "}";
+// Estilo do tanque
+s += "." + classeTanque + " .tanque {";
+s += "  position: relative;";
+s += "  width: " + larguraTanque + "px;";
+s += "  height: " + alturaTanque + "px;";
+s += "  background-color: " + corFundoTanque + ";";
+s += "  border: " + espessuraBorda + " solid " + corBorda + ";";
+s += "  border-radius: " + arredondamentoBorda + "px;";
+s += "  overflow: hidden;";
+s += "}";
+// Estilo da água
+s += "." + classeTanque + " .tanque .agua {";
+s += "  position: absolute;";
+s += "  bottom: 0;";
+s += "  width: 100%;";
+s += "  background-color: " + corTanque + ";";
+s += "  transition: height " + velocidadeAnimacao + " ease-out;"; // Transição suave
+s += "}";
+
+// Finalizando a adição de estilos
+s += "</style>";
+
+// Retornando o HTML para o ScadaBR
+return s;
